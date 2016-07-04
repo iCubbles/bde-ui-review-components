@@ -1,0 +1,34 @@
+<dom-module id="review-input-style">
+    <template>
+        <!--
+        Get help: https://www.polymer-project.org/1.0/docs/devguide/styling.html#xscope-styling-details
+        -->
+        <style>
+            :host {
+                --base-form-padding: 0.3em;
+                display: block;
+                padding: var(--base-form-padding);
+                width: 100%;
+            }
+
+            fieldset {
+                display: inline-block;
+            }
+
+            label {
+                margin-right: 0.3em;
+                font-weight: bold;
+                color: #2f6fad;
+            }
+
+            input[type=text] {
+                width: 12em;
+            }
+
+            button[type="submit"] {
+                display: inline-block;
+            }
+
+        </style>
+    </template>
+</dom-module>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>app</title>
+
+    <script src="../../cubx.core.rte@1.9.0/webcomponents/webcomponents-lite.js"></script>
+
+    <script>
+        (function(context) {
+            "use strict";
+
+            context.cubx = {
+                "CRCInit": {
+                    "rootDependencies": [
+                        "this/review-todo/main"
+                    ]
+                }
+            };
+        })(this);
+    </script>
+    <!-- include crc-loader webresource from base
+        1) Want to add a main script?
+        Add the following attribute: data-crc-main="js/main.js"
+    -->
+
+    <script src="../../cubx.core.rte@1.9.0/crc-loader/js/main.js" data-crcinit-loadcif="false"></script>
+
+</head>
+<body cubx-core-crc>
+<h1>Hello World!</h1>
+
+  <review-todo></review-todo>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<link rel="import" href="review-input-style.html">
+<dom-module id="review-input">
+
+    <template>
+        <style include="main-style"></style>
+        <style include="review-input-style"></style>
+        
+        <form id="form" on-submit="handleSubmit">
+            <fieldset>
+                <label for="textInput"></label>
+                <input type="text" id="textInput" name="textInput">
+            </fieldset>
+            <button type="submit">Hinzufügen</button>
+        </form>
+    </template>
+
+    <script src="review-input.js"></script>
+</dom-module>

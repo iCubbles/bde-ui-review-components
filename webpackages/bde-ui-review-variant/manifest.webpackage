@@ -1,0 +1,86 @@
+{
+  "name": "bde-ui-review-variant",
+  "groupId": "",
+  "version": "0.1.0-SNAPSHOT",
+  "modelVersion": "8.3.1",
+  "docType": "webpackage",
+  "author": {
+    "name": "Judit Ross",
+    "email": "judit.ross@incowia.com"
+  },
+  "license": "MIT",
+  "keywords": [ ],
+  "man": [ ],
+  "artifacts": {
+    "apps": [
+
+      {
+        "artifactId": "docs",
+        "description": "Generated webpackage documentation.",
+        "runnables": [
+          {
+            "name": "docs",
+            "path": "/index.html",
+            "description": "Show the interface of this component."
+          }
+        ]
+      }
+    ],
+    "elementaryComponents": [ ],
+    "compoundComponents": [ {
+      "artifactId": "review-compound",
+      "description": "This is a cubbles-compound-component.",
+      "runnables": [
+        {
+          "name": "demo",
+          "path": "/demo/index.html",
+          "description": "Demo app..."
+        },
+        {
+          "name": "docs",
+          "path": "/docs/index.html",
+          "description": "Show the interface and dataflow of this component."
+        }
+      ],
+      "endpoints": [
+        {
+          "endpointId": "main",
+          "resources": [
+            "css/review-compound.css",
+            "review-compound-template.html"
+          ],
+          "dependencies": [
+            "de.hm-ag.bde-ui-review/review-input/main",
+            "de.hm-ag.bde-ui-review/review-list/main"
+          ]
+        }
+      ],
+      "slots": [],
+      "members": [
+        {
+          "memberId": "input",
+          "componentId": "de.hm-ag.bde-ui-review/review-input"
+        },
+        {
+          "memberId": "list",
+          "componentId": "de.hm-ag.bde-ui-review/review-list"
+        }
+      ],
+      "connections": [
+        {
+          "connectionId": "input-to-list",
+          "source": {
+            "memberIdRef": "input",
+            "slot": "text"
+          },
+          "destination": {
+            "memberIdRef": "list",
+            "slot": "item"
+          }
+        }
+      ],
+      "inits": []
+    } ],
+    "utilities": [ ]
+  }
+}

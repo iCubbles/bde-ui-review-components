@@ -14,17 +14,6 @@
   "artifacts": {
     "apps": [
       {
-        "artifactId": "app",
-        "description": "This is a simple pre-generated app.",
-        "runnables": [
-          {
-            "name": "app",
-            "path": "/index.html",
-            "description": "Call this app as a simple demo."
-          }
-        ]
-      },
-      {
         "artifactId": "docs",
         "description": "Generated webpackage documentation.",
         "runnables": [
@@ -94,8 +83,7 @@
             "endpointId": "main",
             "description": "This is recommended for you use with webcomponents.",
             "resources": [
-              "review-input.html",
-              "js/main.js"
+              "review-input.html"
             ],
             "dependencies": [
               "cubx.core.rte@1.9.0/cubxpolymer/main"

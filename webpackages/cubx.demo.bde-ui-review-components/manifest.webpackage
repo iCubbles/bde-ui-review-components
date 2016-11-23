@@ -1,12 +1,12 @@
 {
-  "name": "bde-ui-review",
-  "groupId": "de.hm-ag",
+  "name": "bde-ui-review-components",
+  "groupId": "cubx.demo",
   "version": "0.1.0-SNAPSHOT",
-  "modelVersion": "8.3.1",
+  "modelVersion": "9.1.1",
   "docType": "webpackage",
   "author": {
-    "name": "Felix Dürrwald",
-    "email": "felix.duerrwald@hm-ag.de"
+    "name": "Judit Ross",
+    "email": "judit.ross@incowia.com"
   },
   "license": "MIT",
   "keywords": [],
@@ -41,18 +41,6 @@
             "description": "Show the interface of this component."
           }
         ],
-        "endpoints": [
-          {
-            "endpointId": "main",
-            "description": "This is recommended for you use with webcomponents.",
-            "resources": [
-              "review-list.html"
-            ],
-            "dependencies": [
-              "cubx.core.rte@1.9.0/cubxpolymer/main"
-            ]
-          }
-        ],
         "slots": [
           {
             "slotId": "item",
@@ -60,6 +48,15 @@
             "direction": [
               "input"
             ]
+          }
+        ],
+        "resources": [
+          "review-list.html"
+        ],
+        "dependencies": [
+          {
+            "webpackageId": "cubx.core.rte@2.1.0-SNAPSHOT",
+            "artifactId": "cubxpolymer"
           }
         ]
       },
@@ -78,18 +75,6 @@
             "description": "Show the interface of this component."
           }
         ],
-        "endpoints": [
-          {
-            "endpointId": "main",
-            "description": "This is recommended for you use with webcomponents.",
-            "resources": [
-              "review-input.html"
-            ],
-            "dependencies": [
-              "cubx.core.rte@1.9.0/cubxpolymer/main"
-            ]
-          }
-        ],
         "slots": [
           {
             "slotId": "text",
@@ -97,6 +82,15 @@
             "direction": [
               "output"
             ]
+          }
+        ],
+        "resources": [
+          "review-input.html"
+        ],
+        "dependencies": [
+          {
+            "webpackageId": "cubx.core.rte@2.1.0-SNAPSHOT",
+            "artifactId": "cubxpolymer"
           }
         ]
       }

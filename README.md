@@ -1,4 +1,16 @@
-## test-package
+## bde-ui-review-components
 
 <hr/>
-Note This page is generated based on the markdown-syntax. For details see <http://daringfireball.net/projects/markdown/syntax/>
+
+The webpackage `bde-ui-review-components` offer 2 components for test in the bde.
+ 
+* review-input - has an output slot `text`
+* review-list - has an input slot `item` 
+
+For the first experience can construct the following very simple scenario:
+  * connect the `review-input` output slot `text` to `review-list` input slot `ìtem`. 
+ 
+<hr/>
+
+The components initial developed within the project ![WebbleTag](./WEBBLETAG.png)  project. 
+ 
